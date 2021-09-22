@@ -3,8 +3,13 @@ import './App.css';
 
 function App() {
   const test = true;
+  const style = {
+    backgroundColor: 'white',
+    color: 'aqua',
+    padding: 30
+  }
   return (
-    <div>
+    <div style={style}>
       {test === true ? (
         <div className="App">
           <header className="App-header">
