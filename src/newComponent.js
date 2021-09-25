@@ -1,5 +1,13 @@
-const newComponent = () => {
-  return <div>This is new component</div>;
+const NewComponent = (props) => {
+  return (
+    <div>
+      This is {props.name} component. <br /> children is {props.children}
+    </div>
+  );
 };
 
-export default newComponent;
+NewComponent.defaultProps = {
+  name: "NO NAME",
+};
+
+export default NewComponent;

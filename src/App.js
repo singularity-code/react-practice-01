@@ -24,7 +24,9 @@ function App() {
             >
               Learn React
             </a>
-            <NewComponent></NewComponent>
+            <NewComponent>
+              <div>This is a child</div>
+            </NewComponent>
           </header>
         </div>
       ) : (
