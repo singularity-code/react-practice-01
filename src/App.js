@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import NewComponent from "./newComponent";
+import NewComponent from "./component/NewComponent";
+import Say from "./component/Say";
 
 function App() {
   const test = true;
@@ -27,6 +28,7 @@ function App() {
             <NewComponent name={"Correct Name"} favNum={100}>
               <div>This is a child</div>
             </NewComponent>
+            <Say></Say>
           </header>
         </div>
       ) : (
