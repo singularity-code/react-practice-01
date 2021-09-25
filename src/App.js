@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import NewComponent from "./component/NewComponent";
 import Say from "./component/Say";
+import EventPractice from "./component/EventPractice";
 
 function App() {
   const test = true;
@@ -29,6 +30,7 @@ function App() {
               <div>This is a child</div>
             </NewComponent>
             <Say></Say>
+            <EventPractice></EventPractice>
           </header>
         </div>
       ) : (
