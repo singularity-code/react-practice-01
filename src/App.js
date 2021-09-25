@@ -24,7 +24,7 @@ function App() {
             >
               Learn React
             </a>
-            <NewComponent>
+            <NewComponent name={"Correct Name"} favNum={100}>
               <div>This is a child</div>
             </NewComponent>
           </header>
