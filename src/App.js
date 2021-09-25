@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import NewComponent from "./newComponent";
 
 function App() {
   const test = true;
@@ -23,6 +24,7 @@ function App() {
             >
               Learn React
             </a>
+            <NewComponent></NewComponent>
           </header>
         </div>
       ) : (
