@@ -1,7 +1,7 @@
-const NewComponent = (props) => {
+const NewComponent = ({ name, children }) => {
   return (
     <div>
-      This is {props.name} component. <br /> children is {props.children}
+      This is {name} component. <br /> children is {children}
     </div>
   );
 };
