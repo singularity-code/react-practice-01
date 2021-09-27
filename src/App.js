@@ -3,6 +3,7 @@ import "./App.css";
 import NewComponent from "./component/NewComponent";
 import Say from "./component/Say";
 import EventPractice from "./component/EventPractice";
+import CreateRef from "./component/CreateRef";
 
 function App() {
   const test = true;
@@ -16,7 +17,6 @@ function App() {
       {test === true ? (
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
             <p>Test Mode</p>
             <a
               className="App-link"
@@ -31,6 +31,7 @@ function App() {
             </NewComponent>
             <Say></Say>
             <EventPractice></EventPractice>
+            <CreateRef></CreateRef>
           </header>
         </div>
       ) : (
