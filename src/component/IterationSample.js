@@ -6,6 +6,7 @@ function IterationSample() {
   return (
     <div>
       <ul>{nameList}</ul>
+      
     </div>
   );
 }
