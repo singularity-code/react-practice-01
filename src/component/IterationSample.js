@@ -9,7 +9,11 @@ function IterationSample() {
   ]);
   const [inputText, setInpuText] = useState("");
   const [nextId, setNextId] = useState(5);
-  const nameList = names.map((name) => <li key={name.id}>{name.text}</li>);
+  const nameList = names.map((name) => (
+    <li key={name.id} onDoubleClick={() => onRemove(name.id)}>
+      {name.text}
+    </li>
+  ));
 
   const onChange = (e) => setInpuText(e.target.value);
   const onClick = () => {
@@ -20,6 +24,10 @@ function IterationSample() {
     setNextId(nextId + 1);
     setNames(nextNames);
     setInpuText("");
+  };
+  const onRemove = (id) => {
+    const nextNames = names.filter((name) => name.id !== id);
+    setNames(nextNames);
   };
   return (
     <div>
