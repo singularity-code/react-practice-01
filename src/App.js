@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     const style = {
       backgroundColor: "white",
-      color: "aqua",
+      color: "lightblue",
       padding: 30,
     };
     return (
