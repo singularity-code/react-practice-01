@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Chapter01 from "./chapter/Chapter01";
-import Chapter02 from "./chapter/Chapter02";
+import Chapter03 from "./chapter/Chapter03";
 
 class App extends Component {
   render() {
@@ -12,8 +11,7 @@ class App extends Component {
     };
     return (
       <div style={style}>
-        {/* <Chapter01></Chapter01> */}
-        <Chapter02></Chapter02>
+        <Chapter03></Chapter03>
       </div>
     );
   }
