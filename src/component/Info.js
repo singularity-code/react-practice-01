@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const Info = () => {
   const [name, setName] = useState("");
   const [nickName, setNickName] = useState("");
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     console.log("Render Complete");
@@ -11,9 +12,9 @@ const Info = () => {
       nickName,
     });
     return () => {
-      console.log('callback')
-      console.log(name)
-    }
+      console.log("callback");
+      console.log(name);
+    };
   }, [name]);
 
   const onChangeName = (e) => {
@@ -25,6 +26,15 @@ const Info = () => {
   };
   return (
     <div>
+      <button
+        onClick={() => {
+          setVisible(!visible);
+        }}
+      >
+        {" "}
+        {visible ? "Show" : "Hide"}{" "}
+      </button>
+      { visible ? "Toogle Text" : ""}
       <div>
         <input value={name} onChange={onChangeName}></input>
         <input value={nickName} onChange={onChangeNickName}></input>
