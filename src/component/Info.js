@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from "react";
 
 const Info = () => {
-  const [name, setName] = useState("");
-  const [nickName, setNickName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     console.log("Render Complete");
     console.log({
-      name,
-      nickName,
+      firstName,
+      lastName,
     });
     return () => {
       console.log("callback");
-      console.log(name);
+      console.log(firstName);
     };
-  }, [name]);
+  }, []);
 
   const onChangeName = (e) => {
-    setName(e.target.value);
+    setFirstName(e.target.value);
   };
 
-  const onChangeNickName = (e) => {
-    setNickName(e.target.value);
+  const onChangeLastName = (e) => {
+    setLastName(e.target.value);
   };
   return (
     <div>
@@ -36,14 +36,14 @@ const Info = () => {
       </button>
       { visible ? "Toogle Text" : ""}
       <div>
-        <input value={name} onChange={onChangeName}></input>
-        <input value={nickName} onChange={onChangeNickName}></input>
+        <input value={firstName} onChange={onChangeName}></input>
+        <input value={lastName} onChange={onChangeLastName}></input>
       </div>
       <div>
-        <b>Name: </b> {name}
+        <b>First Name: </b> {firstName}
       </div>
       <div>
-        <b>Nick Name: </b> {nickName}
+        <b>Last Name: </b> {lastName}
       </div>
     </div>
   );
