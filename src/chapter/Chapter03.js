@@ -4,6 +4,7 @@ import Info from '../component/Info';
 import InfoReducer from '../component/InfoReducer';
 import CounterReducer from '../component/CounterReducer';
 import Average from '../component/Average';
+import AverageMemo from '../component/AverageMemo';
 
 class Chapter03 extends Component {
     render() {
@@ -13,7 +14,9 @@ class Chapter03 extends Component {
                 <InfoReducer></InfoReducer>
                 <Counter></Counter>
                 <CounterReducer></CounterReducer>
+                <p/>
                 <Average></Average>
+                <AverageMemo></AverageMemo>
             </div>
         );
     }
