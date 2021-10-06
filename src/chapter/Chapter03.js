@@ -6,6 +6,7 @@ import CounterReducer from '../component/CounterReducer';
 import Average from '../component/Average';
 import AverageMemo from '../component/AverageMemo';
 import AverageWithCallback from '../component/AverageWithCallback';
+import AverageRef from '../component/AverageRef';
 
 class Chapter03 extends Component {
     render() {
@@ -21,6 +22,8 @@ class Chapter03 extends Component {
                 <AverageMemo></AverageMemo>
                 <p>With Callback</p>
                 <AverageWithCallback></AverageWithCallback>
+                <p>With useRef</p>
+                <AverageRef></AverageRef>
             </div>
         );
     }
