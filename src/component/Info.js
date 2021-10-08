@@ -34,7 +34,7 @@ const Info = () => {
         {" "}
         {visible ? "Show" : "Hide"}{" "}
       </button>
-      { visible ? "Toogle Text" : ""}
+      {visible ? "Toogle Text" : ""}
       <div>
         <input value={firstName} onChange={onChangeName}></input>
         <input value={lastName} onChange={onChangeLastName}></input>
